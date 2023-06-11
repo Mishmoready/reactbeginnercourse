@@ -153,6 +153,6 @@ const [primaryGenre, secondaryGenre, ...otherGenres] = genres;
 
 console.log(author, title, genres, pages, publicationDate, hasMovieAdaptation);
 console.log(getBooks);
-console.log(primaryGenre, secondaryGenre);
+console.log(primaryGenre, otherGenres, secondaryGenre);
 
 const newGenres = [genres, "epic fantasy"];
