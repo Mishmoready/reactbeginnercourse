@@ -194,6 +194,18 @@ console.log(book.reviews.librarything.reviewsCount);
 const countWrong = book.reviews.librarything.reviewsCount || "no data";
 console.log(countWrong);
 
+const count = book.reviews.librarything.reviewsCount ?? "no data";
+
+console.log(count);
+
+function getTotalReviewCount(book) {
+  const goodreads = book.reviews.goodreads.reviewsCount;
+  const librarything = book.review.librarything.reviewsCount;
+  return goodreads + librarything;
+}
+
+console.log(getTotalReviewCount(book));
+
 // function getYear(str) {
 //   return str.split("-")[0];
 // }
